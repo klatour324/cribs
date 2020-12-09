@@ -24,4 +24,14 @@ class House
       end
     end
   end
+
+  def area
+    @rooms.map do |room|
+      room.area
+    end
+  end
+
+  # def details
+  #
+  # end
 end
