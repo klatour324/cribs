@@ -10,15 +10,13 @@ class HouseTest < Minitest::Test
 
     assert_instance_of House, house
   end
+
+  def test_it_has_rooms
+    house = House.new("$400000", "123 sugar lane")
+
+    assert_equal [], house.rooms
+  end
 end
-#  house.price
-# #=> 400000
-#
-#  house.address
-# #=> "123 sugar lane"
-#
-#  house.rooms
-# #=> []
 #
 #  room_1 = Room.new(:bedroom, 10, '13')
 # #=> #<Room:0x00007fccd29b5720...>
