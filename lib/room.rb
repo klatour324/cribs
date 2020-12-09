@@ -1,8 +1,7 @@
 class Room
   attr_reader :category,
               :length,
-              :width,
-              :paint
+              :width
 
   def initialize(category, length, width)
     @category = category
@@ -15,7 +14,11 @@ class Room
     @length * @width.to_i
   end
 
+  def paint
+    @paint = true
+  end
+
   def is_painted?
-    @paint
+  @paint
   end
 end
