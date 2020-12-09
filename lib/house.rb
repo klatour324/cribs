@@ -30,8 +30,4 @@ class House
       room.area
     end
   end
-
-  # def details
-  #
-  # end
 end
